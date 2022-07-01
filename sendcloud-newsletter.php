@@ -13,3 +13,18 @@
  * Requires PHP: 5.6
  */
 
+if ( ! function_exists( 'sendcloud_newsletter_activate' ) ) {
+	function sendcloud_newsletter_activate() {
+
+	}
+}
+
+register_activation_hook( __FILE__, 'sendcloud_newsletter_activate' );
+
+if ( ! function_exists( 'sendcloud_newsletter_deactivate' ) ) {
+	function sendcloud_newsletter_deactivate() {
+
+	}
+}
+
+register_deactivation_hook( __FILE__, 'sendcloud_newsletter_deactivate' );

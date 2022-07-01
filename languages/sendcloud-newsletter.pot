@@ -1,0 +1,32 @@
+# Copyright (C) 2022 Shopeo
+# This file is distributed under the GPL2+.
+msgid ""
+msgstr ""
+"Project-Id-Version: Sendcloud Newsletter 0.0.1\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/sendcloud-newsletter\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2022-07-02T04:35:38+08:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.6.0\n"
+"X-Domain: sendcloud-newsletter\n"
+
+#. Plugin Name of the plugin
+msgid "Sendcloud Newsletter"
+msgstr ""
+
+#. Plugin URI of the plugin
+#. Author URI of the plugin
+msgid "https://www.shopeo.cn"
+msgstr ""
+
+#. Description of the plugin
+msgid "The integrated <code>sendcloud.net</code> newsletter management system provides the latest news and mailing channels."
+msgstr ""
+
+#. Author of the plugin
+msgid "Shopeo"
+msgstr ""
