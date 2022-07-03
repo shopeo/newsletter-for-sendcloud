@@ -33,8 +33,28 @@ if ( ! defined( 'SENDCLOUD_NEWSLETTER_PATH' ) ) {
 if ( ! function_exists( 'sendcloud_newsletter_sanitize' ) ) {
 	function sendcloud_newsletter_sanitize( $input ) {
 		$sanitary_values = array();
+		if ( isset( $input['sendcloud_newsletter_api_user'] ) ) {
+			$sanitary_values['sendcloud_newsletter_api_user'] = sanitize_text_field( $input['sendcloud_newsletter_api_user'] );
+		}
+
 		if ( isset( $input['sendcloud_newsletter_api_key'] ) ) {
 			$sanitary_values['sendcloud_newsletter_api_key'] = sanitize_text_field( $input['sendcloud_newsletter_api_key'] );
+		}
+
+		if ( isset( $input['sendcloud_newsletter_from'] ) ) {
+			$sanitary_values['sendcloud_newsletter_from'] = sanitize_email( $input['sendcloud_newsletter_from'] );
+		}
+
+		if ( isset( $input['sendcloud_newsletter_from_name'] ) ) {
+			$sanitary_values['sendcloud_newsletter_from_name'] = sanitize_text_field( $input['sendcloud_newsletter_from_name'] );
+		}
+
+		if ( isset( $input['sendcloud_newsletter_reply_to'] ) ) {
+			$sanitary_values['sendcloud_newsletter_reply_to'] = sanitize_email( $input['sendcloud_newsletter_reply_to'] );
+		}
+
+		if ( isset( $input['sendcloud_newsletter_mail_list'] ) ) {
+			$sanitary_values['sendcloud_newsletter_mail_list'] = sanitize_email( $input['sendcloud_newsletter_mail_list'] );
 		}
 
 		return $sanitary_values;
