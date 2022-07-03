@@ -63,7 +63,7 @@ if ( ! function_exists( 'sendcloud_newsletter_sanitize' ) ) {
 
 if ( ! function_exists( 'sendcloud_newsletter_section_info' ) ) {
 	function sendcloud_newsletter_section_info() {
-		echo 'Hello';
+		printf( __( 'Find the required setup information via <a target="_blank" href="%1$s">%2$s</a>', 'sendcloud-newsletter' ), 'https://www.sendcloud.net/', 'sendcloud.net' );
 	}
 }
 
