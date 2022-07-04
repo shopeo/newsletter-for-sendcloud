@@ -168,3 +168,6 @@ if ( ! function_exists( 'sendcloud_newsletter_options_page' ) ) {
 }
 
 add_action( 'admin_menu', 'sendcloud_newsletter_options_page' );
+
+require_once "includes/send-mail.php";
+require_once "includes/SendCloud.class.php";
