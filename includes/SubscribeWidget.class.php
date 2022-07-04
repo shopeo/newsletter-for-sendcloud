@@ -31,7 +31,7 @@ class SubscribeWidget extends WP_Widget {
 			<?php
 		} else {
 			?>
-			<form method="post">
+			<form class="subscribe-form" method="post">
 				<p>
 					<label><?php _e( 'Name', 'sendcloud-newsletter' ); ?></label>
 					<input type="text" name="subscribe_newsletter_name">

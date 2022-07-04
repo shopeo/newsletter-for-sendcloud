@@ -7,7 +7,6 @@
 - [x] Mail List Config
 - [x] Widget Subscribe Form
 - [x] Shortcodes Subscribe Form
-- [ ] Block Subscribe Form
 
 
 - [Sendcloud](https://www.sendcloud.net/)

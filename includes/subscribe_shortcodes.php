@@ -12,7 +12,7 @@ if ( ! function_exists( 'subscribe_shortcodes' ) ) {
 		if ( isset( $_POST['subscribe_newsletter_submit_shortcode'] ) ) {
 			$body .= '<p class="success">' . __( 'Subscribe success!', 'sendcloud-newsletter' ) . '</p>';
 		} else {
-			$body .= '<form class="subscribe-shortcode" method="post">
+			$body .= '<form class="subscribe-form" method="post">
 			<p>
 				<label>' . __( 'Name', 'sendcloud - newsletter' ) . '</label>
 				<input type="text" name="subscribe_newsletter_name">

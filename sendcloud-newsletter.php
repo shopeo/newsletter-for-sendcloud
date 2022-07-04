@@ -174,7 +174,7 @@ require_once "includes/SendCloud.class.php";
 require_once "includes/SubscribeWidget.class.php";
 require_once "includes/subscribe_shortcodes.php";
 
-if ( isset( $_POST['subscribe_newsletter_submit_widget'] ) || isset( $_POST['subscribe_newsletter_submit_shortcode'] ) ) {
+if ( isset( $_POST['subscribe_newsletter_submit_widget'] ) || isset( $_POST['subscribe_newsletter_submit_shortcode'] ) || isset( $_POST['subscribe_newsletter_submit_block'] ) ) {
 	$sendCloud = new SendCloud();
 	$sendCloud->addAddressMember( [ $_POST['subscribe_newsletter_email'] ], [ $_POST['subscribe_newsletter_name'] ] );
 }
