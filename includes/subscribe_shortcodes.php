@@ -5,10 +5,14 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 if ( ! function_exists( 'subscribe_shortcodes' ) ) {
 	function subscribe_shortcodes( $atts = [], $content = null ) {
+		$body = '<div class="subscribe-shortcode">';
+		if ( $content ) {
+			$body .= '<h4>' . $content . '</h4>';
+		}
 		if ( isset( $_POST['subscribe_newsletter_submit_shortcode'] ) ) {
-			return '<p class="subscribe-shortcode-success">' . __( 'Subscribe success!', 'sendcloud-newsletter' ) . '</p>';
+			$body .= '<p class="success">' . __( 'Subscribe success!', 'sendcloud-newsletter' ) . '</p>';
 		} else {
-			return '<form class="subscribe-shortcode" method="post">
+			$body .= '<form class="subscribe-shortcode" method="post">
 			<p>
 				<label>' . __( 'Name', 'sendcloud - newsletter' ) . '</label>
 				<input type="text" name="subscribe_newsletter_name">
@@ -21,6 +25,9 @@ if ( ! function_exists( 'subscribe_shortcodes' ) ) {
 					name="subscribe_newsletter_submit_shortcode">' . __( 'Subscribe', 'sendcloud - newsletter' ) . '</button>
 		</form>';
 		}
+		$body .= '</div>';
+
+		return $body;
 	}
 }
 
