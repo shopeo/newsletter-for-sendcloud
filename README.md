@@ -3,8 +3,8 @@
 ## TODO
 
 - [x] Config Sendcloud
-- [ ] Mail Send Service Provider
-- [ ] Mail List Config
+- [x] Mail Send Service Provider
+- [x] Mail List Config
 - [ ] Block Subscribe Form
 - [ ] Widget Subscribe Form
 - [ ] Shortcodes Subscribe Form
