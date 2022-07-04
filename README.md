@@ -5,8 +5,9 @@
 - [x] Config Sendcloud
 - [x] Mail Send Service Provider
 - [x] Mail List Config
+- [x] Widget Subscribe Form
+- [x] Shortcodes Subscribe Form
 - [ ] Block Subscribe Form
-- [ ] Widget Subscribe Form
-- [ ] Shortcodes Subscribe Form
+
 
 - [Sendcloud](https://www.sendcloud.net/)

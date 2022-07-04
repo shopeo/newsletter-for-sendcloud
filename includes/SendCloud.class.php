@@ -1,4 +1,7 @@
 <?php
+if ( ! defined( 'ABSPATH' ) ) {
+	exit; // Exit if accessed directly.
+}
 
 class SendCloud {
 	private $baseUrl = 'https://api.sendcloud.net/apiv2/';

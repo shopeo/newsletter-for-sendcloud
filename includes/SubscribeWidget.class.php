@@ -1,7 +1,10 @@
 <?php
 
+if ( ! defined( 'ABSPATH' ) ) {
+	exit; // Exit if accessed directly.
+}
+
 class SubscribeWidget extends WP_Widget {
-	public $is_post = false;
 	public $args = array(
 			'before_title'  => '<h4 class="widgettitle">',
 			'after_title'   => '</h4>',
@@ -14,12 +17,6 @@ class SubscribeWidget extends WP_Widget {
 		add_action( 'widgets_init', function () {
 			register_widget( 'SubscribeWidget' );
 		} );
-
-		if ( isset( $_POST['subscribe_newsletter_submit'] ) ) {
-			$sendCloud = new SendCloud();
-			$sendCloud->addAddressMember( [ $_POST['subscribe_newsletter_email'] ], [ $_POST['subscribe_newsletter_name'] ] );
-			$this->is_post = true;
-		}
 	}
 
 	public function widget( $args, $instance ) {
@@ -27,8 +24,8 @@ class SubscribeWidget extends WP_Widget {
 		if ( ! empty( $instance['title'] ) ) {
 			echo $args['before_title'] . apply_filters( 'widget_title', $instance['title'] ) . $args['after_title'];
 		}
-		echo '<div class="textwidget">';
-		if ( $this->is_post ) {
+		echo '<div class="textwidget subscribe-widget">';
+		if ( isset( $_POST['subscribe_newsletter_submit_widget'] ) ) {
 			?>
 			<p class="success"><?php _e( 'Subscribe success!', 'sendcloud-newsletter' ); ?></p>
 			<?php
@@ -44,7 +41,7 @@ class SubscribeWidget extends WP_Widget {
 					<input type="email" name="subscribe_newsletter_email">
 				</p>
 				<button type="submit"
-						name="subscribe_newsletter_submit"><?php _e( 'Subscribe', 'sendcloud-newsletter' ); ?></button>
+						name="subscribe_newsletter_submit_widget"><?php _e( 'Subscribe', 'sendcloud-newsletter' ); ?></button>
 			</form>
 		<?php }
 		echo '</div>';
