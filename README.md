@@ -10,3 +10,9 @@
 
 
 - [Sendcloud](https://www.sendcloud.net/)
+
+
+### Shortcode
+```
+[subscribe]Title[/subscribe]
+```
