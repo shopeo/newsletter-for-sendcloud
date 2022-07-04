@@ -148,7 +148,7 @@ if ( ! function_exists( 'sendcloud_newsletter_manage_options' ) ) {
 	function sendcloud_newsletter_manage_options() {
 		?>
 		<div class="wrap">
-			<h1><?php _e( 'Sendcloud Newsletter', 'sendcloud-newsletter' ); ?></h1>
+			<h1><?php echo esc_html( get_admin_page_title() ); ?></h1>
 			<form action="options.php" method="post">
 				<?php
 				settings_fields( 'sendcloud_newsletter_option_group' );
