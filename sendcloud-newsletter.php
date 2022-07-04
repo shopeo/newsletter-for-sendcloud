@@ -149,7 +149,6 @@ if ( ! function_exists( 'sendcloud_newsletter_manage_options' ) ) {
 		?>
 		<div class="wrap">
 			<h1><?php _e( 'Sendcloud Newsletter', 'sendcloud-newsletter' ); ?></h1>
-			<?php settings_errors(); ?>
 			<form action="options.php" method="post">
 				<?php
 				settings_fields( 'sendcloud_newsletter_option_group' );
