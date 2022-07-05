@@ -169,10 +169,10 @@ if ( ! function_exists( 'sendcloud_newsletter_options_page' ) ) {
 
 add_action( 'admin_menu', 'sendcloud_newsletter_options_page' );
 
-require_once "includes/send-mail.php";
-require_once "includes/SendCloud.class.php";
-require_once "includes/SubscribeWidget.class.php";
-require_once "includes/subscribe_shortcode.php";
+require_once __DIR__ . "/includes/send-mail.php";
+require_once __DIR__ . "/includes/SendCloud.class.php";
+require_once __DIR__ . "/includes/SubscribeWidget.class.php";
+require_once __DIR__ . "/includes/subscribe_shortcode.php";
 
 if ( isset( $_POST['subscribe_newsletter_submit_widget'] ) || isset( $_POST['subscribe_newsletter_submit_shortcode'] ) ) {
 	$sendCloud = new SendCloud();
