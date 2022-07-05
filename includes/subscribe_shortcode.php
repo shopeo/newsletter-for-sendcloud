@@ -3,8 +3,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
 }
 
-if ( ! function_exists( 'subscribe_shortcodes' ) ) {
-	function subscribe_shortcodes( $atts = [], $content = null ) {
+if ( ! function_exists( 'subscribe_shortcode' ) ) {
+	function subscribe_shortcode( $atts = [], $content = null ) {
 		$body = '<div class="subscribe-shortcode">';
 		if ( $content ) {
 			$body .= '<h4>' . $content . '</h4>';
@@ -31,6 +31,6 @@ if ( ! function_exists( 'subscribe_shortcodes' ) ) {
 	}
 }
 
-add_shortcode( 'subscribe', 'subscribe_shortcodes' );
+add_shortcode( 'subscribe', 'subscribe_shortcode' );
 
 
