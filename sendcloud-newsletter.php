@@ -178,3 +178,12 @@ if ( isset( $_POST['subscribe_newsletter_submit_widget'] ) || isset( $_POST['sub
 	$sendCloud = new SendCloud();
 	$sendCloud->addAddressMember( [ $_POST['subscribe_newsletter_email'] ], [ $_POST['subscribe_newsletter_name'] ] );
 }
+
+if ( ! function_exists( 'sendcloud_newsletter_subscribe_block_register' ) ) {
+	function sendcloud_newsletter_subscribe_block_register() {
+		if ( function_exists( 'register_block_type' ) ) {
+			register_block_type( SENDCLOUD_NEWSLETTER_PATH . '/blocks/subscribe' );
+		}
+	}
+}
+add_action( 'init', 'sendcloud_newsletter_subscribe_block_register' );
