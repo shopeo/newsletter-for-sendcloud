@@ -9,7 +9,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2022-07-05T08:28:45+08:00\n"
+"POT-Creation-Date: 2022-07-13T19:46:51+08:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.6.0\n"
 "X-Domain: sendcloud-newsletter\n"
@@ -36,7 +36,7 @@ msgid "Subscribe Widget"
 msgstr ""
 
 #: includes/SubscribeWidget.class.php:30
-#: includes/subscribe_shortcodes.php:13
+#: includes/subscribe_shortcode.php:13
 msgid "Subscribe success!"
 msgstr ""
 
@@ -98,4 +98,9 @@ msgstr ""
 
 #: sendcloud-newsletter.php:166
 msgid "Sendcloud"
+msgstr ""
+
+#: blocks/subscribe/block.json
+msgctxt "block title"
+msgid "Subscribe"
 msgstr ""

@@ -5,8 +5,8 @@ msgstr ""
 "Project-Id-Version: Sendcloud Newsletter 0.0.1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/sendcloud-"
 "newsletter\n"
-"POT-Creation-Date: 2022-07-05T08:28:45+08:00\n"
-"PO-Revision-Date: 2022-07-05 08:34+0800\n"
+"POT-Creation-Date: 2022-07-13T19:46:51+08:00\n"
+"PO-Revision-Date: 2022-07-13 19:50+0800\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: zh_CN\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Poedit 3.1\n"
+"X-Generator: Poedit 3.1.1\n"
 "X-Domain: sendcloud-newsletter\n"
 
 #. Plugin Name of the plugin
@@ -41,7 +41,7 @@ msgstr "SHOPEO"
 msgid "Subscribe Widget"
 msgstr "订阅小部件"
 
-#: includes/SubscribeWidget.class.php:30 includes/subscribe_shortcodes.php:13
+#: includes/SubscribeWidget.class.php:30 includes/subscribe_shortcode.php:13
 msgid "Subscribe success!"
 msgstr "订阅成功!"
 
@@ -106,3 +106,8 @@ msgstr "Sendcloud通讯"
 #: sendcloud-newsletter.php:166
 msgid "Sendcloud"
 msgstr "Sendcloud"
+
+#: blocks/subscribe/block.json
+msgctxt "block title"
+msgid "Subscribe"
+msgstr "订阅"
