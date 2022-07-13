@@ -2,6 +2,8 @@
 	let el = element.createElement;
 	let __ = i18n.__;
 	let RichText = editor.RichText;
+	let AligenmentToolbar = blockEditor.AlignmentToolbar;
+	let BlockControls = blockEditor.BlockControls;
 	let useBlockProps = blockEditor.useBlockProps;
 
 	blocks.registerBlockType('sendcloud-newsletter/subscribe', {
