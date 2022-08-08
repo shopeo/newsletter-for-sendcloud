@@ -34,11 +34,13 @@ class SubscribeWidget extends WP_Widget {
 			<form class="subscribe-form" method="post">
 				<p>
 					<label><?php _e( 'Name', 'sendcloud-newsletter' ); ?></label>
-					<input type="text" name="subscribe_newsletter_name">
+					<input type="text" name="subscribe_newsletter_name"
+						   placeholder="<?php _e( 'Name', 'sendcloud-newsletter' ); ?>">
 				</p>
 				<p>
-					<label><?php _e( 'Email Address', 'sendcloud-newsletter' ); ?></label>
-					<input type="email" name="subscribe_newsletter_email">
+					<label><?php _e( 'Email', 'sendcloud-newsletter' ); ?></label>
+					<input type="email" name="subscribe_newsletter_email"
+						   placeholder="<?php _e( 'Email', 'sendcloud-newsletter' ); ?>">
 				</p>
 				<button type="submit"
 						name="subscribe_newsletter_submit_widget"><?php _e( 'Subscribe', 'sendcloud-newsletter' ); ?></button>

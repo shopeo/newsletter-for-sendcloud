@@ -14,15 +14,15 @@ if ( ! function_exists( 'subscribe_shortcode' ) ) {
 		} else {
 			$body .= '<form class="subscribe-form" method="post">
 			<p>
-				<label>' . __( 'Name', 'sendcloud - newsletter' ) . '</label>
-				<input type="text" name="subscribe_newsletter_name">
+				<label>' . __( 'Name', 'sendcloud-newsletter' ) . '</label>
+				<input type="text" name="subscribe_newsletter_name" placeholder="' . __( 'Name', 'sendcloud-newsletter' ) . '">
 			</p>
 			<p>
-				<label>' . __( 'Email Address', 'sendcloud - newsletter' ) . '</label>
-				<input type="email" name="subscribe_newsletter_email">
+				<label>' . __( 'Email', 'sendcloud-newsletter' ) . '</label>
+				<input type="email" name="subscribe_newsletter_email" placeholder="' . __( 'Email', 'sendcloud-newsletter' ) . '">
 			</p>
 			<button type="submit"
-					name="subscribe_newsletter_submit_shortcode">' . __( 'Subscribe', 'sendcloud - newsletter' ) . '</button>
+					name="subscribe_newsletter_submit_shortcode">' . __( 'Subscribe', 'sendcloud-newsletter' ) . '</button>
 		</form>';
 		}
 		$body .= '</div>';

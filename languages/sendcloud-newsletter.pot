@@ -1,18 +1,17 @@
 # Copyright (C) 2022 Shopeo
 # This file is distributed under the GPL2+.
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Sendcloud Newsletter 0.0.1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/sendcloud-newsletter\n"
-"POT-Creation-Date: 2022-07-13 21:14+0800\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 3.1.1\n"
+"POT-Creation-Date: 2022-08-08T20:27:02+08:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.6.0\n"
 "X-Domain: sendcloud-newsletter\n"
 
 #. Plugin Name of the plugin
@@ -36,23 +35,31 @@ msgstr ""
 msgid "Subscribe Widget"
 msgstr ""
 
-#: includes/SubscribeWidget.class.php:30 includes/subscribe_shortcode.php:13
+#: includes/SubscribeWidget.class.php:30
+#: includes/subscribe_shortcode.php:13
 msgid "Subscribe success!"
 msgstr ""
 
 #: includes/SubscribeWidget.class.php:36
+#: includes/SubscribeWidget.class.php:38
+#: includes/subscribe_shortcode.php:17
+#: includes/subscribe_shortcode.php:18
 msgid "Name"
 msgstr ""
 
-#: includes/SubscribeWidget.class.php:40
-msgid "Email Address"
+#: includes/SubscribeWidget.class.php:41
+#: includes/SubscribeWidget.class.php:43
+#: includes/subscribe_shortcode.php:21
+#: includes/subscribe_shortcode.php:22
+msgid "Email"
 msgstr ""
 
-#: includes/SubscribeWidget.class.php:44
+#: includes/SubscribeWidget.class.php:46
+#: includes/subscribe_shortcode.php:25
 msgid "Subscribe"
 msgstr ""
 
-#: includes/SubscribeWidget.class.php:55
+#: includes/SubscribeWidget.class.php:57
 msgid "Title:"
 msgstr ""
 
