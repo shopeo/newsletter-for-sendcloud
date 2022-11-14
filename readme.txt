@@ -1,0 +1,24 @@
+=== Sendcloud Newsletter ===
+Contributors: SHOPEO
+Donate link: https://shopeo.cn/
+Requires at least: 5.9
+Requires PHP: 5.6
+Tested up to: 6.1
+Stable tag: 0.0.1
+License: GPLv2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+
+- [x] Config Sendcloud
+- [x] Mail Send Service Provider
+- [x] Mail List Config
+- [x] Widget Subscribe Form
+- [x] Shortcodes Subscribe Form
+
+
+- [Sendcloud](https://www.sendcloud.net/)
+
+
+### Shortcode
+```
+[subscribe]Title[/subscribe]
+```
