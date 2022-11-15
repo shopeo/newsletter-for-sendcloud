@@ -30,8 +30,7 @@ class SendCloud {
 			'to'       => $to,
 			'subject'  => $subject,
 			'html'     => $html,
-			'replyTo'  => $reply_to ?: $this->reply_to,
-			'headers'  => $headers
+			'replyTo'  => $reply_to ?: $this->reply_to
 		);
 
 		if ( ! empty( $attachments ) ) {
@@ -71,9 +70,10 @@ class SendCloud {
 		$result = curl_exec( $curl );
 		if ( $result === false ) {
 			echo curl_error( $curl );
+			return false;
 		}
 		curl_close( $curl );
 
-		return $result;
+		return true;
 	}
 }

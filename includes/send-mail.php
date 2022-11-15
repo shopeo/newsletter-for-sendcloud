@@ -7,6 +7,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 if ( ! function_exists( 'wp_mail' ) ) {
 	function wp_mail( $to, $subject, $message, $headers = '', $attachments = array() ) {
 		$sendCloud = new SendCloud();
-		$sendCloud->sendMail( $to, $subject, $message, $headers, $attachments );
+		return $sendCloud->sendMail( $to, $subject, $message, $headers, $attachments );
 	}
 }
