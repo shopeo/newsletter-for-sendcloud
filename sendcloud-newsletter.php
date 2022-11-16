@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: Sendcloud Newsletter
- * Plugin URI: https://www.shopeo.cn
+ * Plugin URI: https://www.shopeo.cn/plugins/sendcloud-newsletter
  * Description: The integrated <code>sendcloud.net</code> newsletter management system provides the latest news and mailing channels.
  * Author: Shopeo
  * Version: 0.0.1
