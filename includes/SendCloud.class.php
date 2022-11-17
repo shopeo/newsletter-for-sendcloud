@@ -12,11 +12,11 @@ class SendCloud {
 	private $reply_to;
 
 	public function __construct( string $api_user = null, string $api_key = null, string $from = null, string $fromName = null, string $reply_to = null ) {
-		$this->api_user = $api_user ?: get_option( 'sendcloud_newsletter_options' )['sendcloud_newsletter_api_user'];
-		$this->api_key  = $api_key ?: get_option( 'sendcloud_newsletter_options' )['sendcloud_newsletter_api_key'];
-		$this->from     = $from ?: get_option( 'sendcloud_newsletter_options' )['sendcloud_newsletter_from'];
-		$this->fromName = $fromName ?: get_option( 'sendcloud_newsletter_options' )['sendcloud_newsletter_from_name'];
-		$this->reply_to = $reply_to ?: get_option( 'sendcloud_newsletter_options' )['sendcloud_newsletter_reply_to'];
+		$this->api_user = $api_user ?: get_option( 'newsletter_for_sendcloud_options' )['newsletter_for_sendcloud_api_user'];
+		$this->api_key  = $api_key ?: get_option( 'newsletter_for_sendcloud_options' )['newsletter_for_sendcloud_api_key'];
+		$this->from     = $from ?: get_option( 'newsletter_for_sendcloud_options' )['newsletter_for_sendcloud_from'];
+		$this->fromName = $fromName ?: get_option( 'newsletter_for_sendcloud_options' )['newsletter_for_sendcloud_from_name'];
+		$this->reply_to = $reply_to ?: get_option( 'newsletter_for_sendcloud_options' )['newsletter_for_sendcloud_reply_to'];
 	}
 
 	public function sendMail( $to, $subject, $html, $headers = '', $attachments = array(), $reply_to = null ) {
@@ -43,7 +43,7 @@ class SendCloud {
 	}
 
 	public function addAddressMember( $members = array(), $names = array(), $address = null ) {
-		$address = $address ?: get_option( 'sendcloud_newsletter_options' )['sendcloud_newsletter_mail_list'];
+		$address = $address ?: get_option( 'newsletter_for_sendcloud_options' )['newsletter_for_sendcloud_mail_list'];
 		$url     = 'addressmember/add';
 		$host    = $this->baseUrl . $url;
 		$params  = array(

@@ -2,11 +2,11 @@
 # This file is distributed under the GPL2+.
 msgid ""
 msgstr ""
-"Project-Id-Version: Sendcloud Newsletter 0.0.1\n"
-"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/sendcloud-"
-"newsletter\n"
-"POT-Creation-Date: 2022-08-08T20:27:02+08:00\n"
-"PO-Revision-Date: 2022-08-08 20:29+0800\n"
+"Project-Id-Version: Newsletter for Sendcloud 0.0.1\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/newsletter-for-"
+"sendcloud\n"
+"POT-Creation-Date: 2022-11-18T00:36:42+08:00\n"
+"PO-Revision-Date: 2022-11-18 00:38+0800\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: zh_CN\n"
@@ -14,17 +14,16 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Poedit 3.1.1\n"
-"X-Domain: sendcloud-newsletter\n"
+"X-Generator: Poedit 3.2\n"
+"X-Domain: newsletter-for-sendcloud\n"
 
 #. Plugin Name of the plugin
-msgid "Sendcloud Newsletter"
+msgid "Newsletter for Sendcloud"
 msgstr "Sendcloud通讯"
 
 #. Plugin URI of the plugin
-#. Author URI of the plugin
-msgid "https://www.shopeo.cn"
-msgstr "https://www.shopeo.cn"
+msgid "https://wordpress.org/plugins/newsletter-for-sendcloud"
+msgstr "https://wordpress.org/plugins/newsletter-for-sendcloud"
 
 #. Description of the plugin
 msgid ""
@@ -36,6 +35,10 @@ msgstr ""
 #. Author of the plugin
 msgid "Shopeo"
 msgstr "SHOPEO"
+
+#. Author URI of the plugin
+msgid "https://shopeo.cn"
+msgstr "https://shopeo.cn"
 
 #: includes/SubscribeWidget.class.php:16
 msgid "Subscribe Widget"
@@ -63,48 +66,48 @@ msgstr "订阅"
 msgid "Title:"
 msgstr "标题："
 
-#: sendcloud-newsletter.php:66
+#: newsletter-for-sendcloud.php:66
 msgid ""
 "Find the required setup information via <a target=\"_blank\" href=\"%1$s\">"
 "%2$s</a>"
 msgstr "通过 <a target=“_blank” href=“%1$s”>%2$s</a> 找到所需的设置信息"
 
-#: sendcloud-newsletter.php:110
+#: newsletter-for-sendcloud.php:110
 msgid "Settings"
 msgstr "设置"
 
-#: sendcloud-newsletter.php:112
+#: newsletter-for-sendcloud.php:112
 msgid "API User"
 msgstr "API User"
 
-#: sendcloud-newsletter.php:113
+#: newsletter-for-sendcloud.php:113
 msgid "API Key"
 msgstr "API Key"
 
-#: sendcloud-newsletter.php:114
+#: newsletter-for-sendcloud.php:114
 msgid "From"
 msgstr "发件人邮箱"
 
-#: sendcloud-newsletter.php:115
+#: newsletter-for-sendcloud.php:115
 msgid "From Name"
 msgstr "发件人姓名"
 
-#: sendcloud-newsletter.php:116
+#: newsletter-for-sendcloud.php:116
 msgid "ReplyTo"
 msgstr "回复地址"
 
-#: sendcloud-newsletter.php:117
+#: newsletter-for-sendcloud.php:117
 msgid "Mail List"
 msgstr "邮件列表"
 
-#: sendcloud-newsletter.php:156
+#: newsletter-for-sendcloud.php:156
 msgid "Save Settings"
 msgstr "保存设置"
 
-#: sendcloud-newsletter.php:166
+#: newsletter-for-sendcloud.php:166
 msgid "Sendcloud newsletter"
 msgstr "Sendcloud通讯"
 
-#: sendcloud-newsletter.php:166
+#: newsletter-for-sendcloud.php:166
 msgid "Sendcloud"
 msgstr "Sendcloud"

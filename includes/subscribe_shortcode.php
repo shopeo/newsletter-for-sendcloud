@@ -10,19 +10,19 @@ if ( ! function_exists( 'subscribe_shortcode' ) ) {
 			$body .= '<h4>' . $content . '</h4>';
 		}
 		if ( isset( $_POST['subscribe_newsletter_submit_shortcode'] ) ) {
-			$body .= '<p class="success">' . __( 'Subscribe success!', 'sendcloud-newsletter' ) . '</p>';
+			$body .= '<p class="success">' . __( 'Subscribe success!', 'newsletter-for-sendcloud' ) . '</p>';
 		} else {
 			$body .= '<form class="subscribe-form" method="post">
 			<p>
-				<label>' . __( 'Name', 'sendcloud-newsletter' ) . '</label>
-				<input type="text" name="subscribe_newsletter_name" placeholder="' . __( 'Name', 'sendcloud-newsletter' ) . '">
+				<label>' . __( 'Name', 'newsletter-for-sendcloud' ) . '</label>
+				<input type="text" name="subscribe_newsletter_name" placeholder="' . __( 'Name', 'newsletter-for-sendcloud' ) . '">
 			</p>
 			<p>
-				<label>' . __( 'Email', 'sendcloud-newsletter' ) . '</label>
-				<input type="email" name="subscribe_newsletter_email" placeholder="' . __( 'Email', 'sendcloud-newsletter' ) . '">
+				<label>' . __( 'Email', 'newsletter-for-sendcloud' ) . '</label>
+				<input type="email" name="subscribe_newsletter_email" placeholder="' . __( 'Email', 'newsletter-for-sendcloud' ) . '">
 			</p>
 			<button type="submit"
-					name="subscribe_newsletter_submit_shortcode">' . __( 'Subscribe', 'sendcloud-newsletter' ) . '</button>
+					name="subscribe_newsletter_submit_shortcode">' . __( 'Subscribe', 'newsletter-for-sendcloud' ) . '</button>
 		</form>';
 		}
 		$body .= '</div>';

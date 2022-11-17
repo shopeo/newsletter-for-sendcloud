@@ -1,4 +1,4 @@
-=== Sendcloud Newsletter ===
+=== Newsletter for sendcloud ===
 Contributors: SHOPEO
 Donate link: https://shopeo.cn/
 Requires at least: 5.9

@@ -2,25 +2,24 @@
 # This file is distributed under the GPL2+.
 msgid ""
 msgstr ""
-"Project-Id-Version: Sendcloud Newsletter 0.0.1\n"
-"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/sendcloud-newsletter\n"
+"Project-Id-Version: Newsletter for Sendcloud 0.0.1\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/newsletter-for-sendcloud\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2022-08-08T20:27:02+08:00\n"
+"POT-Creation-Date: 2022-11-18T00:36:42+08:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.6.0\n"
-"X-Domain: sendcloud-newsletter\n"
+"X-Domain: newsletter-for-sendcloud\n"
 
 #. Plugin Name of the plugin
-msgid "Sendcloud Newsletter"
+msgid "Newsletter for Sendcloud"
 msgstr ""
 
 #. Plugin URI of the plugin
-#. Author URI of the plugin
-msgid "https://www.shopeo.cn"
+msgid "https://wordpress.org/plugins/newsletter-for-sendcloud"
 msgstr ""
 
 #. Description of the plugin
@@ -29,6 +28,10 @@ msgstr ""
 
 #. Author of the plugin
 msgid "Shopeo"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://shopeo.cn"
 msgstr ""
 
 #: includes/SubscribeWidget.class.php:16
@@ -63,46 +66,46 @@ msgstr ""
 msgid "Title:"
 msgstr ""
 
-#: sendcloud-newsletter.php:66
+#: newsletter-for-sendcloud.php:66
 msgid "Find the required setup information via <a target=\"_blank\" href=\"%1$s\">%2$s</a>"
 msgstr ""
 
-#: sendcloud-newsletter.php:110
+#: newsletter-for-sendcloud.php:110
 msgid "Settings"
 msgstr ""
 
-#: sendcloud-newsletter.php:112
+#: newsletter-for-sendcloud.php:112
 msgid "API User"
 msgstr ""
 
-#: sendcloud-newsletter.php:113
+#: newsletter-for-sendcloud.php:113
 msgid "API Key"
 msgstr ""
 
-#: sendcloud-newsletter.php:114
+#: newsletter-for-sendcloud.php:114
 msgid "From"
 msgstr ""
 
-#: sendcloud-newsletter.php:115
+#: newsletter-for-sendcloud.php:115
 msgid "From Name"
 msgstr ""
 
-#: sendcloud-newsletter.php:116
+#: newsletter-for-sendcloud.php:116
 msgid "ReplyTo"
 msgstr ""
 
-#: sendcloud-newsletter.php:117
+#: newsletter-for-sendcloud.php:117
 msgid "Mail List"
 msgstr ""
 
-#: sendcloud-newsletter.php:156
+#: newsletter-for-sendcloud.php:156
 msgid "Save Settings"
 msgstr ""
 
-#: sendcloud-newsletter.php:166
+#: newsletter-for-sendcloud.php:166
 msgid "Sendcloud newsletter"
 msgstr ""
 
-#: sendcloud-newsletter.php:166
+#: newsletter-for-sendcloud.php:166
 msgid "Sendcloud"
 msgstr ""

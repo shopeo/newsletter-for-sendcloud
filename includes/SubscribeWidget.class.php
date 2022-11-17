@@ -13,7 +13,7 @@ class SubscribeWidget extends WP_Widget {
 	);
 
 	function __construct() {
-		parent::__construct( 'subscribe_widget', __( 'Subscribe Widget', 'sendcloud-newsletter' ) );
+		parent::__construct( 'subscribe_widget', __( 'Subscribe Widget', 'newsletter-for-sendcloud' ) );
 		add_action( 'widgets_init', function () {
 			register_widget( 'SubscribeWidget' );
 		} );
@@ -27,23 +27,23 @@ class SubscribeWidget extends WP_Widget {
 		echo '<div class="textwidget subscribe-widget">';
 		if ( isset( $_POST['subscribe_newsletter_submit_widget'] ) ) {
 			?>
-			<p class="success"><?php _e( 'Subscribe success!', 'sendcloud-newsletter' ); ?></p>
+			<p class="success"><?php _e( 'Subscribe success!', 'newsletter-for-sendcloud' ); ?></p>
 			<?php
 		} else {
 			?>
 			<form class="subscribe-form" method="post">
 				<p>
-					<label><?php _e( 'Name', 'sendcloud-newsletter' ); ?></label>
+					<label><?php _e( 'Name', 'newsletter-for-sendcloud' ); ?></label>
 					<input type="text" name="subscribe_newsletter_name"
-						   placeholder="<?php _e( 'Name', 'sendcloud-newsletter' ); ?>">
+						   placeholder="<?php _e( 'Name', 'newsletter-for-sendcloud' ); ?>">
 				</p>
 				<p>
-					<label><?php _e( 'Email', 'sendcloud-newsletter' ); ?></label>
+					<label><?php _e( 'Email', 'newsletter-for-sendcloud' ); ?></label>
 					<input type="email" name="subscribe_newsletter_email"
-						   placeholder="<?php _e( 'Email', 'sendcloud-newsletter' ); ?>">
+						   placeholder="<?php _e( 'Email', 'newsletter-for-sendcloud' ); ?>">
 				</p>
 				<button type="submit"
-						name="subscribe_newsletter_submit_widget"><?php _e( 'Subscribe', 'sendcloud-newsletter' ); ?></button>
+						name="subscribe_newsletter_submit_widget"><?php _e( 'Subscribe', 'newsletter-for-sendcloud' ); ?></button>
 			</form>
 		<?php }
 		echo '</div>';
@@ -51,10 +51,10 @@ class SubscribeWidget extends WP_Widget {
 	}
 
 	public function form( $instance ) {
-		$title = ! empty( $instance['title'] ) ? $instance['title'] : esc_html__( '', 'sendcloud_newsletter' );
+		$title = ! empty( $instance['title'] ) ? $instance['title'] : esc_html__( '', 'newsletter-for-sendcloud' );
 		?>
 		<p>
-			<label for="<?php echo esc_attr( $this->get_field_id( 'title' ) ); ?>"><?php echo esc_html__( 'Title:', 'sendcloud-newsletter' ); ?></label>
+			<label for="<?php echo esc_attr( $this->get_field_id( 'title' ) ); ?>"><?php echo esc_html__( 'Title:', 'newsletter-for-sendcloud' ); ?></label>
 			<input class="widefat" id="<?php echo esc_attr( $this->get_field_id( 'title' ) ); ?>"
 				   name="<?php echo esc_attr( $this->get_field_name( 'title' ) ); ?>" type="text"
 				   value="<?php echo esc_attr( $title ); ?>">
