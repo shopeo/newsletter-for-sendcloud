@@ -163,7 +163,7 @@ if ( ! function_exists( 'newsletter_for_sendcloud_manage_options' ) ) {
 
 if ( ! function_exists( 'newsletter_for_sendcloud_options_page' ) ) {
 	function newsletter_for_sendcloud_options_page() {
-		add_options_page( __( 'Sendcloud newsletter', 'newsletter-for-sendcloud' ), __( 'Sendcloud', 'newsletter-for-sendcloud' ), 'manage_options', 'options_newsletter_for_sendcloud', 'newsletter_for_sendcloud_manage_options', 10 );
+		add_options_page( __( 'Newsletter for Sendcloud', 'newsletter-for-sendcloud' ), __( 'Newsletter for Sendcloud', 'newsletter-for-sendcloud' ), 'manage_options', 'options_newsletter_for_sendcloud', 'newsletter_for_sendcloud_manage_options', 10 );
 	}
 }
 

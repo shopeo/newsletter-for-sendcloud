@@ -9,12 +9,13 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2022-11-18T00:36:42+08:00\n"
+"POT-Creation-Date: 2022-11-18T00:56:16+08:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.6.0\n"
 "X-Domain: newsletter-for-sendcloud\n"
 
 #. Plugin Name of the plugin
+#: newsletter-for-sendcloud.php:166
 msgid "Newsletter for Sendcloud"
 msgstr ""
 
@@ -100,12 +101,4 @@ msgstr ""
 
 #: newsletter-for-sendcloud.php:156
 msgid "Save Settings"
-msgstr ""
-
-#: newsletter-for-sendcloud.php:166
-msgid "Sendcloud newsletter"
-msgstr ""
-
-#: newsletter-for-sendcloud.php:166
-msgid "Sendcloud"
 msgstr ""
