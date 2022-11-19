@@ -176,5 +176,5 @@ require_once __DIR__ . "/includes/subscribe_shortcode.php";
 
 if ( isset( $_POST['subscribe_newsletter_submit_widget'] ) || isset( $_POST['subscribe_newsletter_submit_shortcode'] ) ) {
 	$sendCloud = new SendCloud();
-	$sendCloud->addAddressMember( [ $_POST['subscribe_newsletter_email'] ], [ $_POST['subscribe_newsletter_name'] ] );
+	$sendCloud->addAddressMember( [ sanitize_email( $_POST['subscribe_newsletter_email'] ) ], [ sanitize_text_field( $_POST['subscribe_newsletter_name'] ) ] );
 }

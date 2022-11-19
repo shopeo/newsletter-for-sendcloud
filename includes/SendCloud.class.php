@@ -25,12 +25,12 @@ class SendCloud {
 		$params = array(
 			'apiUser'  => $this->api_user,
 			'apiKey'   => $this->api_key,
-			'from'     => $this->from,
+			'from'     => sanitize_email( $this->from ),
 			'fromName' => $this->fromName,
-			'to'       => $to,
+			'to'       => sanitize_email( $to ),
 			'subject'  => $subject,
-			'html'     => $html,
-			'replyTo'  => $reply_to ?: $this->reply_to
+			'html'     => esc_html( $html ),
+			'replyTo'  => sanitize_email( $reply_to ?: $this->reply_to )
 		);
 
 		if ( ! empty( $attachments ) ) {
@@ -39,7 +39,7 @@ class SendCloud {
 			}
 		}
 
-		return $this->request( $host, $params );
+		return $this->request( $host, $params, $headers );
 	}
 
 	public function addAddressMember( $members = array(), $names = array(), $address = null ) {
@@ -60,20 +60,24 @@ class SendCloud {
 		return $this->request( $host, $params );
 	}
 
-	private function request( $host, $params ) {
-		$curl = curl_init();
-		curl_setopt( $curl, CURLOPT_HTTPAUTH, CURLAUTH_BASIC );
-		curl_setopt( $curl, CURLOPT_RETURNTRANSFER, 1 );
-		curl_setopt( $curl, CURLOPT_CUSTOMREQUEST, 'POST' );
-		curl_setopt( $curl, CURLOPT_URL, $host );
-		curl_setopt( $curl, CURLOPT_POSTFIELDS, $params );
-		$result = curl_exec( $curl );
-		if ( $result === false ) {
-			echo curl_error( $curl );
-			return false;
+	private function request( $host, $params, $headers = array() ) {
+		$args     = array(
+			'body'        => $params,
+			'timeout'     => '5',
+			'redirection' => '5',
+			'httpversion' => '1.0',
+			'blocking'    => true,
+			'headers'     => $headers,
+			'cookies'     => array()
+		);
+		$response = wp_remote_post( $host, $args );
+		if ( ! is_wp_error( $response ) ) {
+			$body = json_decode( $response['body'] );
+			if ( $body->statusCode === 200 ) {
+				return true;
+			}
 		}
-		curl_close( $curl );
 
-		return true;
+		return false;
 	}
 }
