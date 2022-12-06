@@ -29,7 +29,7 @@ class SendCloud {
 			'fromName' => $this->fromName,
 			'to'       => sanitize_email( $to ),
 			'subject'  => $subject,
-			'html'     => esc_html( $html ),
+			'html'     => $html,
 			'replyTo'  => sanitize_email( $reply_to ?: $this->reply_to )
 		);
 
@@ -67,7 +67,7 @@ class SendCloud {
 			'redirection' => '5',
 			'httpversion' => '1.0',
 			'blocking'    => true,
-			'headers'     => $headers,
+			'headers'     => array(),
 			'cookies'     => array()
 		);
 		$response = wp_remote_post( $host, $args );
