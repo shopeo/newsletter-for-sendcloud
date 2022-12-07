@@ -4,7 +4,7 @@
  * Plugin URI: https://wordpress.org/plugins/newsletter-for-sendcloud
  * Description: The integrated <code>sendcloud.net</code> newsletter management system provides the latest news and mailing channels.
  * Author: Shopeo
- * Version: 0.0.1
+ * Version: 0.0.3
  * Author URI: https://shopeo.cn
  * License: GPL2+
  * Text Domain: newsletter-for-sendcloud
